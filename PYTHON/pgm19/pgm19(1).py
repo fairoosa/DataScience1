@@ -6,8 +6,8 @@ colors = {"Setosa":"red", "Versicolor":"green",
 "Virginica":"blue"}
 grouped = df.groupby("species")
 for key, group in grouped:
-    group.plot(ax=ax, kind="scatter", x="petal.length",
-y="petal.width", label=key, color=colors[key])
+    group.plot(ax=ax, kind="scatter", x="sepal.length",
+y="sepal.width", label=key, color=colors[key])
 ax.set_title("Scatter Plot")
 ax.set_xlabel("sepal Length")
 ax.set_ylabel("sepal Width")
